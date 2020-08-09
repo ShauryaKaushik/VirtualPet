@@ -13,7 +13,7 @@ happyDog = loadImage("dogImg1.png");
 
 function setup() {
   
-  dog = createSprite(200,200,15,20);
+  dog = createSprite(250,150,15,20);
   dog.scale = 0.3;
   dog.addImage(dogImage);
 
@@ -28,6 +28,8 @@ function setup() {
 
 function draw() {  
 
+  background(46,139,87);
+  
   if(keyWentDown(UP_ARROW)){
   dog.addImage(happyDog);
   }
