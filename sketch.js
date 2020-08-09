@@ -13,8 +13,8 @@ happyDog = loadImage("dogImg1.png");
 
 function setup() {
   
-  dog = createSprite(150,200,15,20);
-  dog.scale = 0.5;
+  dog = createSprite(200,200,15,20);
+  dog.scale = 0.3;
   dog.addImage(dogImage);
 
   database = firebase.database();
