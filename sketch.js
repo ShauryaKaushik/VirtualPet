@@ -14,8 +14,8 @@ happyDog = loadImage("dogImg1.png");
 function setup() {
   
   dog = createSprite(150,200,15,20);
-  dog.addImage(dogImage);
   dog.scale = 0.5;
+  dog.addImage(dogImage);
 
   database = firebase.database();
   foodStock = database.ref("food");
