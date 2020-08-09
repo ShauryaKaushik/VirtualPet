@@ -30,6 +30,8 @@ function draw() {
 
   background(46,139,87);
   
+  text("Press the Up Arrow Key to Feed Drago !",250,350);
+  
   if(keyWentDown(UP_ARROW)){
   dog.addImage(happyDog);
   }
