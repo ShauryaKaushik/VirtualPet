@@ -35,11 +35,11 @@ function draw() {
   text("Food Remaining + foodS",150,200);
   
   if(keyWentDown(UP_ARROW)){
-  dog.addImage(happyDog);
+      writeStock(foodS);
+    dog.addImage(happyDog);
   }
   
   if(keyWentDown(DOWN_ARROW)){
-   writeStock(foodS);
    dog.addImage(dogImage); 
   }
   
