@@ -18,7 +18,7 @@ function setup() {
   dog.addImage(dogImage);
 
   database = firebase.database();
-  foodStock = database.ref("food");
+  foodStock = database.ref("Food");
   foodStock.on("value",readStock,writeStock); 
 
   createCanvas(500, 500);
@@ -37,7 +37,8 @@ function draw() {
   }
   
   if(keyWentDown(DOWN_ARROW)){
-   writeStock();  
+   writeStock();
+   dog = addImage("dogImg.png"); 
   }
   
  drawSprites();
