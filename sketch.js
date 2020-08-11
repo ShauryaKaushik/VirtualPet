@@ -31,9 +31,9 @@ function draw() {
   background(46,139,87);
   
   fill("white");
-  text("Press the Up Arrow Key to Feed Drago !",200,50);
+  text("Press the Up Arrow Key to Feed Drago !",100,50);
   fill("white");
-  text("Food Remaining = "+ foodS,200,200);
+  text("Food Remaining = "+ foodS,200,100);
   
   if(keyWentDown(UP_ARROW)){
       writeStock(foodS);
