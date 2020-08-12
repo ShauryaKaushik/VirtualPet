@@ -19,7 +19,7 @@ function setup() {
 
   database = firebase.database();
   foodStock = database.ref("Food");
-  foodStock.on("value",readStock,writeStock); 
+  foodStock.on("value",readStock); 
 
   createCanvas(500, 500);
   
